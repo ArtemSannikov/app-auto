@@ -19,50 +19,73 @@
 	<!-- cordova js -->
 	<script src="cordova.js"></script>
 </head>
-<body
->
+<body>
+
 <!-- ################### Содержание ################### -->
 <div data-role="page" id="home" data-theme="a">
 
 	<div data-role="header">
+		<a href="#sidebar" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right">Меню</a>
 		<h1>Главное меню</h1>
 	</div>
 
 	<div data-role="main" class="ui-content">
+
+		<div data-role="panel" data-display="push" data-position="left" id="sidebar"><!--overlay -->
+
+			<center><img src="images/logo.png" width="100"></center>
+			<br/><br/>
+			<ul data-role="listview">
+				<li data-role="list-divider">Информация</li>
+				<li data-icon="false"><a href="content/main/about.html" data-transition="none">О приложении</a></li>
+				<li data-icon="false"><a href="content/main/contact.html" data-transition="none">Контакты</a></li>
+				<li data-icon="false"><a href="content/main/donate.html" data-transition="none">Помочь проекту</a></li>
+				<li data-icon="false"><a href="https://play.google.com/store/apps/details?id=com.auto.start" rel="external" data-transition="none">Оставить отзыв</a></li>
+				<li data-role="list-divider">Настройки</li>
+				<li data-icon="false"><a href="" data-transition="none">Убрать рекламу</a></li>
+				<li data-icon="delete" class=""><a data-rel="close">Закрыть панель</a></li>
+			</ul>	
+		</div>
+
 		<ul data-role="listview" data-inset="true">
 			<li data-icon="false">
 				<a href="content/main/engine.html" data-transition="none" data-ajax="true">
 				<img src="images/icon/main/engine.png">
 					<h2>Двигатель</h2>
-					<p>Механизмы и расходники</p>
+					<p>Механизмы и расходники.</p>
+					<span class="ui-li-count">27</span>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/main/suspension.html" data-transition="none" data-ajax="true">
 				<img src="images/icon/main/suspension.png">
 					<h2>Подвеска</h2>
-					<p>Ходовая часть</p>
+					<p>Ходовая часть.</p>
+					<span class="ui-li-count">14</span>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/main/electric.html" data-transition="none" data-ajax="true">
 				<img src="images/icon/main/electric.png">
 					<h2>Электрика</h2>
-					<p>Оборудование, проводка и др.</p>
+					<p>Системы, проводка и др.</p>
+					<span class="ui-li-count">9</span>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/main/body.html" data-transition="none" data-ajax="true">
 				<img src="images/icon/main/body.png">
 					<h2>Кузов</h2>
-					<p>Внешний вид автомобиля</p>
+					<p>Внешний вид.</p>
+					<span class="ui-li-count">13</span>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/main/interior.html" data-transition="none" data-ajax="true">
 				<img src="images/icon/main/interior.png">
 					<h2>Салон</h2>
-					<p>Интерьер автомобиля</p>
+					<p>Интерьер автомобиля.</p>
+					<span class="ui-li-count">10</span>
 				</a>
 			</li>
 			<li data-icon="false">
@@ -70,13 +93,15 @@
 				<img src="images/icon/main/oil.png">
 					<h2>Масла</h2>
 					<p>Виды, характеристи и др.</p>
+					<span class="ui-li-count">9</span>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/main/trouble.html" data-transition="none" data-ajax="true">
 				<img src="images/icon/main/trouble.png">
 					<h2>Неисправности</h2>
-					<p>Распространённые поломки.</p>
+					<p>Частые поломки.</p>
+					<span class="ui-li-count">56</span>
 				</a>
 			</li>
 			<li data-icon="false">
@@ -84,9 +109,10 @@
 				<img src="images/icon/main/recommendation.png">
 					<h2>Советы водителям</h2>
 					<p>Помощь начинающим.</p>
+					<span class="ui-li-count">17</span>
 				</a>
 			</li>
-			<li data-icon="false">
+			<!--<li data-icon="false">
 				<a href="https://play.google.com/store/apps/details?id=com.auto.start" rel="external" data-transition="none" data-ajax="true">
 				<img src="images/icon/main/reviews.png">
 					<h2>Оставить отзыв</h2>
@@ -99,7 +125,7 @@
 					<h2>О приложении</h2>
 					<p>Информация об авторах.</p>
 				</a>
-			</li>
+			</li>-->
 		</ul>
 
 	</div>
