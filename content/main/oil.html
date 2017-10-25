@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Масла</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../cordova.js"></script>
+	<!-- AdMob -->
+	<script type="text/javascript" src="../../js/admob/banner.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="oil" data-theme="a">
+
+	<div data-role="header">
+		<a href="../../index.html" data-ajax="false" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<h1>Масла</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+	
+		<!-- Вызов объявления AdMob -->
+		<script type="text/javascript">admob.createBannerView();</script>
+
+		<!-- Текст страницы-->
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Поиск..">
+			<li data-role="list-divider">Типы масел</li>
+			<li>
+				<a href="../oil/mineral-oil.html" data-transition="none" data-ajax="false">Минеральное масло<br/>(органическое)</a>
+			</li>			
+			<li>
+				<a href="../oil/semisynthetic-oil.html" data-transition="none" data-ajax="false">Полусинтетическое<br/></a>
+			</li>			
+			<li>
+				<a href="../oil/synthetics-oil.html" data-transition="none" data-ajax="false">Синтетическое<br/>масло</a>
+			</li>
+			<li data-role="list-divider">Область применения</li>
+			<li>
+				<a href="../oil/motor.html" data-transition="none" data-ajax="false">Моторное масло</a>
+			</li>
+			<li>
+				<a href="../oil/transmission.html" data-transition="none" data-ajax="false">Трансмиссионное масло</a>
+			</li>
+			<li>
+				<a href="../oil/gur.html" data-transition="none" data-ajax="false">Масло для ГУР<br/>(гидроусилитель)</a>
+			</li>
+			<li data-role="list-divider">Сезонность</li>
+			<li>
+				<a href="../oil/winter-oil.html" data-transition="none" data-ajax="false">Зимнее масло</a>
+			</li>			
+			<li>
+				<a href="../oil/summer-oil.html" data-transition="none" data-ajax="false">Летнее масло</a>
+			</li>			
+			<li>
+				<a href="../oil/all-oil.html" data-transition="none" data-ajax="false">Всесезонное масло</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>

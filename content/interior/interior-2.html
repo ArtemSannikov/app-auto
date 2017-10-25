@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Пассажирское сиденье</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../cordova.js"></script>
+	<!-- AdMob -->
+	<script type="text/javascript" src="../../js/admob/banner.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="interior-2" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-theme="a">
+
+		<div class="ui-btn-left" data-type="horizontal">
+			<a href="../main/interior.html" data-ajax="false" data-role="button" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">Кнопка назад</a>
+		</div>
+
+		<h1 class="ui-title" role="heading">&nbsp;</h1>
+
+		<div class="ui-btn-right" data-type="horizontal">
+			<a href="#list" data-role="button" data-icon="bullets" data-iconpos="notext" data-shadow="false" data-transition="none">Содержание</a>
+			<a href="../../index.html" data-ajax="false" data-role="button" data-icon="home" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">На главную</a>
+		</div>
+
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Вызов объявления AdMob -->
+		<script type="text/javascript">admob.createBannerView();</script>
+
+		<!-- Выезжающая панель справа -->
+		<div data-role="panel" data-display="overlay" data-position="right" id="list">
+			<ul data-role="listview">
+				<li data-icon="false"><a href="#part-1" data-transition="none" data-ajax="false">1. Пассажирское сиденье</a></li>
+				<li data-icon="false"><a href="#part-2" data-transition="none" data-ajax="false">2. Материалы для сидений</a></li>
+				<li data-icon="false"><a href="#part-3" data-transition="none" data-ajax="false">3. Устройства создания<br/>комфорта</a></li>
+				<li data-icon="delete" class=""><a data-rel="close">Закрыть содержание</a></li>
+			</ul>	
+		</div>
+
+		<!-- Описание компонента -->
+		<center><img src="../../images/interior/passajirskoe-sidenie.jpg"/></center>
+		<a name="part-1"></a><h3>1. Пассажирское сиденье</h3>
+		<p>На современных автомобилях сиденья имеют сложную конструкцию. За основу взят металлический каркас, поролон и прочие синтетические материалы для подушек; для обшивки используются ткани, кожа или прочая синтетика. В сиденья встраивают различные дополнительные устройства: системы тяг и рычагов, иногда и электроприводы (для регулировки положений), подогрев, вентиляция и даже подушки безопасности.</p>
+
+		<a name="part-2"></a><h3>2. Материалы для сидений</h3>
+
+		<p>Кожзамы, различные синтетические ткани, кожа могут использоваться в качестве материалов для покрытий сидений. Покрытие сидений должно быть устойчивым к температурным перепадам, легко моющимся или поддающимся химчистке, а также прочным. Как правило, в обычных серийных автомобилях используются дешевые тканевые покрытия и кожзамы, серо-черной цветовой гаммы. В последнее время обозначилась тенденция осветления сидений: все чаще можно увидеть белую отделку. Покрытие из светлой кожи считается наиболее дорогим вариантом, что же касается практичности, то вопреки расхожему времени такие сиденья не сильно пачкаются и легко чистятся.</p>
+
+		<a name="part-3"></a><h3>3. Устройства создания комфорта</h3>
+
+		<p>Сегодня невозможно представить сиденье, в котором отсутствуют какие-либо регулировки и варианты трансформации. Даже в самой дешевой машине обязательно предусмотрена возможность регулировки передних сидений в направлении назад/вперед, по высоте, наклону спинки, изменению положения подголовников. Задние сиденья могут складываться, увеличивая объем багажника.</p>
+
+		<p>В автомобилях премиум класса сиденья просто “нашпигованы” дополнительными регулировками, которые управляются электроприводами. Установленные положения можно сохранить, чтобы для каждого водителя действовали свои настройки. Показатель престижности автомобиля измеряют разнообразием и обширностью всяческих настроек, хотя далеко не все они реально необходимы и востребованы.</p>
+
+		<p>Часто в сиденья встраивается обогрев, который представляет собой простое устройство, запитанное от бортовой электросети. Впервые, сиденья с подогревом появились в 1966 году на автомобилях марки “Cadillac”. Изредка можно встретить и вентиляцию, впервые примененную на “Saab” в 1997 году.</p>
+
+		<p>Смотрите также: <a href="interior-1.html" data-ajax="false" data-transition="none">Водителькое сиденье</a></p>
+		<p>Источник: autohis.ru</p>
+
+	</div>
+
+</div>
+
+</body>
+</html>
