@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Цилиндры</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="engine-7" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-theme="a">
+
+		<div class="ui-btn-left" data-type="horizontal" style="margin-top: 4px;">
+			<a href="../main/engine.html" data-role="button" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		</div>
+
+		<h1 class="ui-title" role="heading">Навигация</h1>
+
+		<div class="ui-btn-right" data-type="horizontal" style="margin-top: 4px;">
+			<a href="#list" data-role="button" class="ui-nodisc-icon transparentButton" data-icon="bullets" data-iconpos="notext" data-shadow="false" data-transition="none">Содержание</a>
+			<a href="../../index.html" data-ajax="false" class="ui-nodisc-icon transparentButton" data-role="button" data-icon="home" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">На главную</a>
+		</div>
+
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Выезжающая панель справа -->
+		<div data-role="panel" data-display="overlay" data-position="right" id="list">
+			<ul data-role="listview">
+				<li data-icon="false"><a href="#part-1" data-transition="none" data-ajax="false">1. Цилиндр</a></li>
+				<li data-icon="false"><a href="#part-2" data-transition="none" data-ajax="false">2. Цилиндр имеет две части.</a></li>
+				<li data-icon="delete" class=""><a data-rel="close">Закрыть содержание</a></li>
+			</ul>	
+		</div>
+
+		<!-- Описание компонента -->
+		<a name="part-1"></a><h3>1. Цилиндр</h3>
+
+		<p>Цилиндром называют одну из частей двигателя внутреннего сгорания. Обычно она состоит из рубашки и гильзы. В двигательной системе может быть несколько цилиндров. Объем двигателя определяется при расчете их суммарного объема.</p>
+
+		<p>Корпус цилиндра имеет форму трубки, которая представлена с толстыми стенками. На сегодняшний день в ДВС может быть как 1 цилиндр, так и 24. Их количество зависит от типа транспорта. В любом случае объем двигателя всегда равняется сумме всех объемов цилиндров, которыми оснащен двигатель.</p>
+		<center><img src="../../images/engine/cil.jpg"/></center>
+
+		<a name="part-2"></a><h3>2. Цилиндр имеет две части:</h3>
+		<ol>
+			<li>Внутренняя часть – гильза, которая является рабочей поверхностью. Обычно она изготавливается из высокопрочной стали или чугуна. Из-за своей высокой чистоты ее также называют зеркалом цилиндра.</li>
+			<li>Внешняя часть цилиндра – рубашка. Эта часть изготавливается из того же материала, что двигательная станина. Большое количество цилиндров располагается в едином блоке, которое имеет общее зарубашечное пространство. Рубашки цилиндров являются отливкой. Они также называются блоками цилиндров.</li>
+		</ol>
+		<p>Когда двигатель начинается работать, в цилиндр поступают продукты сгорания топлива, обычно они имеют газообразное состояние. Такой этап при работе двигателя обычно называют тактом впрыска. Сам цилиндр имеет специальный поршень, который начинает двигаться от расширяющихся газов. От них тепловая энергия возрастает, и поршень начинает двигаться. После задействования поршня вращается и коленчатый вал. Обычно число колен аналогично с числом цилиндров.</p>
+
+		<p>Рабочий цикл двигателя состоит из тактов, которые имеют свои особенности определенную последовательность. Во всех случаях поршень передвигается от одной точки к другой, которые называются мертвой нижней точкой и верхней мертвой точкой.</p>
+
+		<p>При работе ДВС сильно нагревается, поэтому в этом случае предусмотрена система охлаждения. Так, в рубашечной части цилиндра происходит охлаждение двигателя. Различают воздушное и жидкостное охлаждение. В первом случае избыток тепловой энергии выбрасывается через рубашки с ребристой поверхностью в быстрый поток воздуха. Во втором случае применяется специальная жидкость. Она проходит в рубашку цилиндра, тем самым охлаждая его, а после поступает в радиатор охлаждения. Здесь ее снова охлаждает система вентиляции. В качестве жидкости может выступать обычная вода, масло, а также антифриз.</p>
+
+		<p>Источник: mashintop.ru</p>
+	</div>
+
+</div>
+
+</body>
+</html>
