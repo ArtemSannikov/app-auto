@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Блок цилиндров</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="engine-1" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-position="fixed"  data-theme="a">
+
+		<div class="ui-btn-left" data-type="horizontal" style="margin-top: 4px;">
+			<a href="list.html" data-role="button" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		</div>
+
+		<h1 class="ui-title" role="heading">Навигация</h1>
+
+		<div class="ui-btn-right" data-type="horizontal" style="margin-top: 4px;">
+			<a href="#list" data-role="button" class="ui-nodisc-icon transparentButton" data-icon="bullets" data-iconpos="notext" data-shadow="false" data-transition="none">Содержание</a>
+			<a href="../../../index.html" data-ajax="false" class="ui-nodisc-icon transparentButton" data-role="button" data-icon="home" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">На главную</a>
+		</div>
+
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Выезжающая панель справа -->
+		<div data-role="panel" data-display="overlay" data-position="right" id="list" data-position-fixed="true">
+			<ul data-role="listview">
+				<li data-icon="false"><a href="#part-1" data-transition="none" data-ajax="false">1. Блок цилиндров</a></li>
+				<li data-icon="false"><a href="#part-2" data-transition="none" data-ajax="false">2. Материал изготовления<br/>блока цилиндров</a></li>
+				<li data-icon="false"><a href="#part-3" data-transition="none" data-ajax="false">3. Основные требования к<br/>блоку цилиндров двигателя</a></li>
+				<li data-icon="false"><a href="#part-4" data-transition="none" data-ajax="false">4. Обзор основных деталей<br/>блока цилиндров</a></li>
+				<li data-icon="delete" class=""><a data-rel="close">Закрыть содержание</a></li>
+			</ul>	
+		</div>
+
+		<!-- Описание компонента -->
+		<a name="part-1"></a><h3>1. Блок цилиндров</h3>
+
+		<p>Блок цилиндров двигателя — это деталь 2-х и более цилиндровых поршневых двигателей. Блок цилиндров выполняет две основные функции: он является корпусом для размещения всех узлов, механизмов и деталей двигателя. Второе – блок цилиндров основа для навесных частей двигателя: картер, головка блока цилиндров.</p>
+
+		<a name="part-2"></a><h3>2. Материал изготовления блока цилиндров</h3>
+
+		<p>Чугун – традиционный материал, из которого до недавнего времени изготавливались блоки. Чугун применяется с добавками: никель, хром. Положительные качества чугунного блока цилиндров: меньшая чувствительность к перегреву, жёсткость, необходимая при высокой степени форсировки двигателя. Минус – большая масса, которая влияет на динамику легкового автомобиля.</p>
+		<center><img src="../../../images/engine/gbz.jpg"/></center>
+
+		<p>Алюминий – занимает второе место в изготовлении блоков цилиндров. Положительными качествами алюминиевого блока являются: лёгкость и лучшее охлаждение. Как недостаток отмечается проблема с подбором материала, из которого должен выполняться цилиндр.</p>
+		<center><img src="../../../images/engine/gbz1.jpg"/></center>
+		<p>В современных условиях, для изготовления цилиндров в алюминиевые блоки цилиндров двигателя разработаны технологии: Locasil – запрессовка гильз из алюминий — кремния, Nicasil – в виде никелевого покрытия на алюминиевой поверхности блока цилиндров.</p>
+
+		<p>Недостатком никасиловой технологии считается то, что при прогаре поршня или обрыве шатуна, никелевое покрытие выходит из строя и блок цилиндров не подлежит ремонту. Он меняется в сборе. В отличие от чугунного, который подвергается расточке и гильзованию ремонтным комплектом.</p>
+
+		<p>Блок цилиндров из магниевого сплава сочетает в себе твердость чугунного, и лёгкость алюминиевого. Но, такой блок очень дорогое удовольствие и на конвейерном производстве не применяется.</p>
+		<center><img src="../../../images/engine/gbz2.jpg"/></center>
+
+		<a name="part-3"></a><h3>3. Основные требования к блоку цилиндров двигателя</h3>
+		<ol>
+			<li>отверстия всех постелей должны обеспечивать соосность;</li>
+			<li>постели должны иметь одинаковый диаметр. Исключение составляют специальные конструкции;</li>
+			<li>оси постелей и плоскости блока цилиндров должны быть идеально параллельны.</li>
+		</ol>
+
+		<a name="part-4"></a><h3>4. Обзор основных деталей блока цилиндров</h3>
+		<p>Цилиндр двигателя. Основной деталью цилиндра двигателя является гильза. Применяются два типа гильз:</p>
+		<ol>
+			<li>гильзы, впрессованные непосредственно в блок цилиндров. Как правило, в алюминиевых блоках;</li>
+			<li>съёмные гильзы, которые подразделяются на «мокрые» и «сухие».</li>
+		</ol>
+
+		<p>Головка блока цилиндров. В её состав входят: камера сгорания, места крепления ГРМ, рубашка охлаждения и каналы смазки, резьбовые отверстия для свечей (форсунок), отверстия для впускных и выпускных каналов.</p>
+		<center><img src="../../../images/engine/gbz3.jpg"/></center>
+		<p>ГБЦ крепится к блоку цилиндров сверху. Отдельным пунктом нужно отметить технологию крепления ГБЦ к блоку цилиндров. Она требует специальных болтов крепления и выполнения инструкций производителя. Затяжка ГБЦ производится только при помощи динамометрического ключа с соблюдением рекомендуемых параметров момента затяжки и схемы затяжки болтов.</p>
+
+		<p>Картер двигателя. В ДВС картер является частью блока цилиндров. Снизу картер закрывается поддоном. По сути, картер – это корпус для кривошипно-шатунного механизма. Крепится к блоку цилиндров снизу.</p>
+		<center><img src="../../../images/engine/gbz4.jpg"/></center>
+
+		<p>Источник: carnovato.ru</p>
+	</div>
+
+</div>
+
+</body>
+</html>

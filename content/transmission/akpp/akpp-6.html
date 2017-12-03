@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Особенность Honda</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="akpp-6" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-position="fixed"  data-theme="a">
+
+		<div class="ui-btn-left" data-type="horizontal" style="margin-top: 4px;">
+			<a href="list.html" data-role="button" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		</div>
+
+		<h1 class="ui-title" role="heading">Описание</h1>
+
+		<div class="ui-btn-right" data-type="horizontal" style="margin-top: 4px;">
+			<a href="#list" data-role="button" class="ui-nodisc-icon transparentButton" data-icon="bullets" data-iconpos="notext" data-shadow="false" data-transition="none">Содержание</a>
+			<a href="../../../index.html" data-ajax="false" class="ui-nodisc-icon transparentButton" data-role="button" data-icon="home" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">На главную</a>
+		</div>
+
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Выезжающая панель справа -->
+		<div data-role="panel" data-display="overlay" data-position="right" id="list" data-position-fixed="true">
+			<ul data-role="listview">
+				<li data-icon="false"><a href="#part-1" data-transition="none" data-ajax="false">1. Особенность Honda</a></li>
+				<li data-icon="delete" class=""><a data-rel="close">Закрыть содержание</a></li>
+			</ul>	
+		</div>
+
+		<!-- Описание компонента -->
+		<a name="part-1"></a><h3>1. Особенность Honda</h3>
+		<center><img src="../../../images/transmission/akpp/akpp-6.1.jpg"></center>
+		<p>Уже упоминалось (в разделе гидротрансформатор), что коробки Honda отличаются от всех остальных автоматов, по сути это обычная механика с гидравлическим управлением. Плюсы этих коробок — это надежность, т. к. ломаться там практически нечему, они проще в ремонте и изготовлении. Состоят такие коробки из двух и более валов с шестернями и путем включения определенной комбинации шестерней меняется передаточное число.</p>
+		<p>Одна шестерёнка в каждой паре постоянно сцеплена со своим валом, вторая связана со своим через так называемое мокрое сцепление (фрикционная муфта включения передачи), т. е. все шестерни вращаются, но одна из пары не сцеплена с валом и соответственно крутящий момент и вращение не передаются на колеса автомобиля (нейтраль). Устройство и принцип работы муфты, как и на обычных автоматах. Когда диски сжимаются, вторая шестерня сцепляется со своим валом, соответствующая передача включена.</p>
+		<p>Задняя реализуется на сцеплении одной из передач. На валу рядом с шестерней одной передачи находится реверсивная шестерня, эти две шестерни не закрепляются жёстко на валу, между ними имеется втулка с зубьями зафиксированная на этом валу, а на этой втулке кольцевая муфта с зубьями. И в зависимости в какую из сторон будет перемещена эта муфта, та шестерня и сцепляется с валом, кольцевая муфта смещается при помощи вилки с гидравлическим приводом. Реверсивная шестерня меняет направление вращения, включается задний ход.</p>
+		<p>Источник: AutoLeek</p>
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Количество ступеней</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="mkpp-4" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-position="fixed"  data-theme="a">
+
+		<div class="ui-btn-left" data-type="horizontal" style="margin-top: 4px;">
+			<a href="list.html" data-role="button" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		</div>
+
+		<h1 class="ui-title" role="heading">Описание</h1>
+
+		<div class="ui-btn-right" data-type="horizontal" style="margin-top: 4px;">
+			<a href="#list" data-role="button" class="ui-nodisc-icon transparentButton" data-icon="bullets" data-iconpos="notext" data-shadow="false" data-transition="none">Содержание</a>
+			<a href="../../../index.html" data-ajax="false" class="ui-nodisc-icon transparentButton" data-role="button" data-icon="home" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">На главную</a>
+		</div>
+
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Выезжающая панель справа -->
+		<div data-role="panel" data-display="overlay" data-position="right" id="list" data-position-fixed="true">
+			<ul data-role="listview">
+				<li data-icon="false"><a href="#part-1" data-transition="none" data-ajax="false">1. Двухступенчатые</a></li>
+				<li data-icon="false"><a href="#part-2" data-transition="none" data-ajax="false">2. Трёхступенчатые</a></li>
+				<li data-icon="false"><a href="#part-3" data-transition="none" data-ajax="false">3. Четырёхступенчатые</a></li>
+				<li data-icon="false"><a href="#part-4" data-transition="none" data-ajax="false">4. Пятиступенчатые</a></li>
+				<li data-icon="false"><a href="#part-5" data-transition="none" data-ajax="false">5. Шестиступенчатые</a></li>
+				<li data-icon="false"><a href="#part-6" data-transition="none" data-ajax="false">6. Семиступенчатые</a></li>
+				<li data-icon="delete" class=""><a data-rel="close">Закрыть содержание</a></li>
+			</ul>	
+		</div>
+
+		<!-- Описание компонента -->
+		<h3>Количество ступеней</h3>
+		<p>Число ступеней считают по номеру передачи переднего хода с наименьшим передаточным отношением.</p>
+		<a name="part-1"></a><h3>1. Двухступенчатые</h3>
+		<p>Некоторые из первых серийных автомобилей, например Ford T, из соображений удешевления имели коробку передач с двумя передачами переднего хода, плюс одна-две передачи заднего.</p>
+
+		<a name="part-2"></a><h3>2. Трёхступенчатые</h3>
+		<p>Ещё в 1910-х годах распространились коробки передач с тремя ступенями переднего хода, которые были широко распространены в Европе — до конца 1960-х годов, а в Северной Америке — до второй половины 1970-х; после середины 1930-х в них как правило были синхронизированы как минимум вторая и третья передачи; вплоть до конца 1950-х — начала 1960-х большинство автомобилей имело именно трёхступенчатые коробки передач, в СССР даже существовали дорожные знаки, требующие от водителя по мере приближения к железнодорожному переезду переключаться с третьей (первый знак — три чёрточки) сначала на вторую (второй — две чёрточки), а затем и на первую (третий — одна чёрточка) передачу.</p>
+
+		<a name="part-3"></a><h3>3. Четырёхступенчатые</h3>
+		<p>Уже на многих ранних автомобилях использовались четырёхступенчатые коробки передач, но без синхронизаторов; с появлением синхронизаторов большинство производителей массовых автомобилей ограничило количество ступеней тремя; только в конце 1950-х годов на массовых моделях стали появляться четырёхступенчатые коробки передач «со сближенными передаточными числами», имевшие две промежуточные передачи (II и III), что обеспечивало более интенсивный и плавный разгон, делало более удобным управление в плотном потоке транспорта за счёт меньшей разницы в передаточных числах I и II передач. В США они долго рассматривались как спортивная опция, а в Европе с начала 1960-х стали устанавливаться на большинство автомобилей.</p>
+
+		<a name="part-4"></a><h3>4. Пятиступенчатые</h3>
+		<p>В 1960-е годы появились, а в 1980-е получили массовое распространение МКП с четырьмя основными передачами переднего хода и дополнительной пятой, которая представляла собой встроенную в саму коробку повышающую передачу.</p>
+
+		<a name="part-5"></a><h3>5. Шестиступенчатые</h3>
+		<p>В 1990-е годы появились шестиступенчатые коробки передач. Они могли представлять собой как МКП с четырьмя базовыми ступенями и двумя — повышающими (для ещё большей экономии топлива), так и МКП с пятью базовыми и одной повышающей ступенью (для ещё более динамичного разгона).</p>
+
+		<a name="part-6"></a><h3>6. Семиступенчатые</h3>
+		<p>В 2000-е годы появляются механические коробки передач с пятью базовыми ступенями и двумя повышающими (например, Bugatti Veyron или BMW M5).</p>
+
+		<p>С распространением полуавтоматизированных систем переключения передач (как на том же Bugatti Veyron) с возможностью переключения передач только «вверх» или «вниз» при помощи электроники, по сути стало возможно иметь почти сколько угодно передач с сохранением возможности для водителя адекватно переключать их. Тем не менее, на современном этапе большинство массовых легковых автомобилей обходятся пятью-шестью.</p>
+
+		<p>Источник: Википедия</p>
+	</div>
+
+</div>
+
+</body>
+</html>
