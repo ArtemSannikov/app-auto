@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Устройство автомобиля</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Open sidebar (left panel) on swipe -->
+	<script type="text/javascript" src="js/swipe-panel.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="js/admob.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-position="fixed" data-theme="a">
+
+		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Меню</a>
+
+		<h1>Категории</h1>
+
+	</div>
+
+	<!-- Выезжающая панель слева -->
+	<div data-role="panel" data-display="overlay" data-position="left" id="left-panel" data-position-fixed="true">
+
+		<ul data-role="listview">
+			<li data-icon="delete" class=""><a data-rel="close">Закрыть панель</a></li>
+			<li data-icon="false"><a href="content/main/about.html" data-ajax="false" data-transition="none">О приложении</a></li>
+			<li data-icon="false"><a href="content/main/contact.html" data-ajax="false" data-transition="none">Контактная информация</a></li>
+			<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
+		</ul>	
+	</div>
+
+		<!-- Всплывающее окно: Оставить отзыв -->
+		<div data-role="popup" id="PopupReviewApp" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+			<div data-role="header" data-theme="a">
+				<h1>Редирект</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">Переход на Play Market</h3>
+				<p>Сейчас вы будете перенаправлены на страницу приложения в Play Market, где сможете оставить отзыв о приложении.</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Отмена</a>
+				<a href="https://play.google.com/store/apps/details?id=com.auto.start" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" rel="external" data-transition="none">Перейти</a>
+			</div>
+		</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Контент -->
+		<ul data-role="listview" data-inset="false">
+
+			<li data-icon="false">
+				<a href="content/main/alert.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/alert.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Важно</h2>
+					<p>Обязательно к прочтению.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/engine/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/engine.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Двигатель</h2>
+					<p>Механизмы и расходники.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/transmission/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/transmission.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Трансмиссия</h2>
+					<p>МКПП, АКПП, РКПП и др.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/suspension/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/suspension.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Подвеска</h2>
+					<p>Ходовая часть.</p>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="content/brake-system/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/brake-system.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Тормозная система</h2>
+					<p>Колодки, диски и др.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/electric/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/electric.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Электрооборудование</h2>
+					<p>Системы, проводка и др.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/body/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/body.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Кузов</h2>
+					<p>Внешний вид.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/interior/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/interior.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Салон</h2>
+					<p>Интерьер автомобиля.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/oil/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/oil.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Масла</h2>
+					<p>Виды, характеристи и др.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/trouble/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/trouble.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Неисправности</h2>
+					<p>Частые поломки.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
+				<a href="content/history/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/history.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>История</h2>
+					<p>Краткий гид по истории.</p>
+				</a>
+			</li>
+			
+		</ul>
+
+	</div>
+
+</div>
+
+</body>
+</html>

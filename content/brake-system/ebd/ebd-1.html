@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Принцип действия и конструкция</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="../../../js/admob.js"></script>
+	<!-- cordova js -->
+	<script src="../../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="brake-system" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-position="fixed"  data-theme="a">
+		<a data-role="button" data-rel="back" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<h1 class="ui-title" role="heading">Описание</h1>
+		<a href="../../../index.html" data-ajax="false" class="ui-nodisc-icon transparentButton" data-role="button" data-icon="home" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">На главную</a>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<h3>Принцип действия и конструкция</h3>
+
+		<center><img src="../../../images/brake-system/ebd/ebd-1.png"></center>
+
+		<p>При экстренном торможении центр тяжести автомобиля смещается в переднюю часть, уменьшая нагрузку на заднюю ось. Если в этот момент тормозные усилия на все колеса будут одинаковыми (что происходит в автомобилях, на которых не используются системы, регулирующие тормозное усилие), задние колеса могут быть полностью заблокированы. Это приводит к потере курсовой устойчивости под воздействием боковых сил, а также к заносам и потере управляемости. Также регулировка тормозных сил необходима при загрузке автомобиля пассажирами или багажом.</p>
+
+		<p>В случае, когда торможение выполняется в повороте (при этом центр тяжести переносится на колеса, идущие по внешнему радиусу) или произвольные колеса попадают на поверхности с различным сцеплением (например, на лед), действия одной системы ABS может быть недостаточно.</p>
+
+		<p>Решить эту проблему позволяет система распределения тормозных усилий, которая взаимодействует с каждым колесом в отдельности. На практике это включает следующие задачи:</p>
+
+		<ul>
+			<li>Определение степени проскальзывания на дорожном покрытии для каждого колеса</li>
+			<li>Изменение давления рабочей жидкости в тормозных механизмах и распределение тормозных усилий в зависимости от сцепления колес с дорогой</li>
+			<li>Сохранение курсовой устойчивости при воздействии боковых сил</li>
+			<li>Снижение вероятности заноса автомобиля в процессе торможения и поворота</li>
+		</ul>
+		
+	</div>
+
+</div>
+
+</body>
+</html>
