@@ -1,3 +1,7 @@
+* {
+	text-shadow: none;
+}
+
 table {
 	width: 100%;
 	border-collapse: collapse;
@@ -34,32 +38,6 @@ ul.ui-listview li h2 {
 	white-space : normal;
 	text-shadow: none;
 }
-	ul.ui-listview li a {
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		text-shadow: none;		
-	}
-	ul.ui-listview li a.ui-btn:active {
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		text-shadow: none;
-		border-top: 1px solid #dddddd;
-	}
-	ul.ui-listview li a.ui-btn:focus {
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		background-color: #fafafa;
-		color: #333;
-		text-shadow: none;
-		border-top: 1px solid #dddddd;
-	}
-
-/* Перенос слов в заголовках h2 */
-
-ul.ui-listview li h2 {
-	white-space : normal;
-	text-shadow: none;
-}
 	#left-panel ul.ui-listview li a {
 		white-space : normal;
 		text-shadow: none;
@@ -83,3 +61,11 @@ ul.ui-listview li h2 {
 			text-shadow: none;
 			border-top: 1px solid #dddddd;
 		}
+
+/*Стили для линии hr*/
+hr {
+	background-color: #dfdfdf;
+	border: 0;
+	height: 1px;
+	width: 100%;
+}
