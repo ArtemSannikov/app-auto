@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Принцип работы ESC</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="../../../js/admob.js"></script>
+	<!-- cordova js -->
+	<script src="../../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="brake-system" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-position="fixed"  data-theme="a">
+		<a data-role="button" data-rel="back" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<h1 class="ui-title" role="heading">Описание</h1>
+		<a href="../../../index.html" data-ajax="false" class="ui-nodisc-icon transparentButton" data-role="button" data-icon="home" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">На главную</a>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<h3>Принцип работы ESC</h3>
+
+		<p>Система курсовой устойчивости ESC – это электрогидравлическая система активной безопасности, главное назначение которой — не дать автомобилю уйти в занос, то есть предотвратить отклонение от заданной траектории движения при резком маневрировании. ESC имеет еще одно название — «система динамической стабилизации». Аббревиатура ESC расшифровывается как Electronic Stability Control — электронный контроль устойчивости (ЭКУ).</p>
+
+		<p>Разберем принцип работы ESC на примере системы курсовой устойчивости ESP (Electronic Stability Programme) от компании Bosch, которая устанавливается на автомобили с 1995 года.</p>
+
+		<p>Самое важное для ESP – это правильно определить момент наступления неконтролируемой (аварийной) ситуации. Во время движения система стабилизации непрерывно сопоставляет параметры движения автомобиля и действия водителя. Система начинает работать, если действия человека за рулем становятся отличными от фактических параметров движения машины. Например, резкий поворот руля на большой угол.</p>
+
+		<p>Система активной безопасности может стабилизировать движение автомобиля несколькими способами:</p>
+
+		<ul>
+			<li>притормаживанием определенных колес</li>
+			<li>изменением крутящего момента двигателя</li>
+			<li>изменением угла поворота передних колес (если установлена система активного рулевого управления)</li>
+			<li>изменением степени демпфирования амортизаторов (если установлена адаптивная подвеска)</li>
+		</ul>
+
+		<p>Система курсовой устойчивости не дает автомобилю уйти за пределы заданной траектории поворота. Если датчиками фиксируется недостаточная поворачиваемость, то ESP осуществляет притормаживание заднего внутреннего колеса, а также меняет крутящий момент двигателя. Если выявлена избыточная поворачиваемость, то система притормаживает переднее наружнее колесо, а также варьирует крутящий момент.</p>
+
+		<p>Чтобы подтормаживать колеса, ESP использует систему ABS, на базе которой она построена. Цикл работы включает три стадии: повышение давления, поддержание давления, сбрасывание давления в тормозной системе.</p>
+
+		<p>Крутящий момент двигателя изменяется системой динамической стабилизации следующими способами:</p>
+
+		<ul>
+			<li>отменой переключения передачи в автоматической коробке переключения передач</li>
+			<li>пропуском впрыска топлива</li>
+			<li>изменением угла опережения зажигания</li>
+			<li>изменением угла положения дроссельной заслонки</li>
+			<li>пропуском зажигания</li>
+			<li>перераспределением крутящего момента по осям (на автомобилях с полным приводом)	</li>
+		</ul>
+
+	</div>
+
+</div>
+
+</body>
+</html>
