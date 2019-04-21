@@ -2,8 +2,8 @@
 	<widget xmlns        = "http://www.w3.org/ns/widgets"
 		    xmlns:gap    = "http://phonegap.com/ns/1.0"
 		    id           = "com.auto.start"
-		    versionCode  = "8"
-		    version      = "1.4">
+		    versionCode  = "9"
+		    version      = "1.5">
 
 		    <!-- Название приложения -->
 		    <name>Устройство автомобиля</name>

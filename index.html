@@ -15,6 +15,8 @@
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<!-- Include the jQuery Mobile library -->
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Настройка отображения текста и фона  -->
+	<script type="text/javascript" src="js/settings.js"></script>
 	<!-- Open sidebar (left panel) on swipe -->
 	<script type="text/javascript" src="js/swipe-panel.js"></script>
 	<!-- AdMob-->
@@ -33,18 +35,56 @@
 
 		<h1>Категории</h1>
 
+		<a href="#right-panel" data-role="button" data-icon="gear" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton">Настройки</a>
+
 	</div>
 
 	<!-- Выезжающая панель слева -->
-	<div data-role="panel" data-display="overlay" data-position="left" id="left-panel" data-position-fixed="true">
+	<div data-role="panel" data-display="push" data-position="left" id="left-panel" data-position-fixed="true">
 
 		<ul data-role="listview">
 			<li data-icon="false"><a href="content/main/about.html" data-ajax="false" data-transition="none">Информация о приложении</a></li>
 			<li data-icon="false"><a href="content/main/contact.html" data-ajax="false" data-transition="none">Контактная информация</a></li>
 			<li data-icon="false"><a href="content/main/donate.html" data-transition="none" data-ajax="false">Поддержать проект</a></li>
 			<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
-			<li data-icon="false"><a href="https://artemsannikov.ru/privacy-policy/" rel="external" data-transition="none">Полит. конфиденциальности</a></li>
 		</ul>	
+	</div>
+
+	<!-- Выезжающая панель справа -->
+	<div data-role="panel" id="right-panel" data-display="push" data-position="right" data-position-fixed="true">
+
+		<center><h3>Настройки</h3></center>
+
+		<form action="">
+
+			<select name="backgroundColor" onchange="changeBackground()">
+				<option>Цвет фона</option>
+				<option value="white_background">Белый</option>
+				<option value="gray_background">Серый</option>
+				<option value="black_background">Тёмный</option>
+			</select>
+
+			<select name="fontSizeText" onchange="changeSizeText()">
+				<option>Размер текста</option>
+				<option value="16">16 px</option>
+				<option value="18">18 px</option>
+				<option value="20">20 px</option>
+				<option value="22">22 px</option>
+				<option value="24">24 px</option>
+			</select>
+
+			<select name="textColor" onchange="changeColorText()">
+				<option>Цвет текста</option>
+				<option value="white_colorText">Белый</option>
+				<option value="gray_colorText">Серый</option>
+				<option value="black_colorText">Чёрный</option>
+			</select>
+
+			
+		</form>
+
+			<button onclick="resetSettings()" data-ajax="false">Сбросить</button>
+
 	</div>
 
 		<!-- Всплывающее окно: Оставить отзыв -->
@@ -67,7 +107,7 @@
 	
 			<li data-icon="false">
 				<a href="content/engine/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/engine.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/engine.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Двигатель</h2>
 					<p>Механизмы и расходники.</p>
 				</a>
@@ -75,7 +115,7 @@
 			
 			<li data-icon="false">
 				<a href="content/transmission/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/transmission.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/transmission.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Трансмиссия</h2>
 					<p>МКПП, АКПП, РКПП и др.</p>
 				</a>
@@ -83,7 +123,7 @@
 			
 			<li data-icon="false">
 				<a href="content/suspension/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/suspension.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/suspension.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Подвеска</h2>
 					<p>Ходовая часть.</p>
 				</a>
@@ -91,7 +131,7 @@
 
 			<li data-icon="false">
 				<a href="content/steering-mechanism/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/steering-mechanism.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/steering-mechanism.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Рулевое управление</h2>
 					<p>Гур, рейка и др.</p>
 				</a>
@@ -99,7 +139,7 @@
 
 			<li data-icon="false">
 				<a href="content/cooling-system/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/cooling-system.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/cooling-system.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Система охлаждения</h2>
 					<p>Термостат, радиатор и др.</p>
 				</a>
@@ -107,7 +147,7 @@
 
 			<li data-icon="false">
 				<a href="content/ignition-system/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/ignition-system.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/ignition-system.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Система зажигания</h2>
 					<p>Свечи, катушки и др.</p>
 				</a>
@@ -115,7 +155,7 @@
 
 			<li data-icon="false">
 				<a href="content/fuel-system/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/fuel-system.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/fuel-system.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Топливная система</h2>
 					<p>Бак, фильтр и др.</p>
 				</a>
@@ -123,7 +163,7 @@
 
 			<li data-icon="false">
 				<a href="content/brake-system/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/brake-system.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/brake-system.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Тормозная система</h2>
 					<p>Колодки, диски и др.</p>
 				</a>
@@ -131,15 +171,23 @@
 			
 			<li data-icon="false">
 				<a href="content/electric/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/electric.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/electric.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Электрооборудование</h2>
 					<p>Системы, проводка и др.</p>
 				</a>
 			</li>
 			
 			<li data-icon="false">
+				<a href="content/sensors/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/sensors.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Датчики</h2>
+					<p>ХХ, уровень топлива и др.</p>
+				</a>
+			</li>
+			
+			<li data-icon="false">
 				<a href="content/body/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/body.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/body.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Кузов</h2>
 					<p>Внешний вид.</p>
 				</a>
@@ -147,7 +195,7 @@
 			
 			<li data-icon="false">
 				<a href="content/interior/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/interior.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/interior.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Салон</h2>
 					<p>Интерьер автомобиля.</p>
 				</a>
@@ -155,7 +203,7 @@
 			
 			<li data-icon="false">
 				<a href="content/oil/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/oil.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/oil.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Масла</h2>
 					<p>Виды, характеристи и др.</p>
 				</a>
@@ -163,7 +211,7 @@
 			
 			<li data-icon="false">
 				<a href="content/trouble/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/trouble.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/trouble.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>Неисправности</h2>
 					<p>Частые поломки.</p>
 				</a>
@@ -171,7 +219,7 @@
 			
 			<li data-icon="false">
 				<a href="content/history/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/history.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<img src="images/icon/history.svg" width="56" height="56" style="padding: 12px 12px;" />
 					<h2>История</h2>
 					<p>Краткий гид по истории.</p>
 				</a>

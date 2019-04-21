@@ -19,6 +19,14 @@ img {
 	height:auto;
 }
 
+/*Боковая граница у выезжающего меню слева/справа*/
+.ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
+	border-right: 1px solid #dddddd;
+}
+.ui-panel-animate.ui-panel-open.ui-panel-position-right.ui-panel-display-push {
+	border-left: 1px solid #dddddd;
+}
+
 /*no disk icon & transparent icon*/
 
 .transparentButton {
