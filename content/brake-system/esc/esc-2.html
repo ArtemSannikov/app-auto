@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Устройство и основные компоненты ESC</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Настройка отображения текста и фона  -->
+	<script type="text/javascript" src="../../../js/settings.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="../../../js/admob.js"></script>
+	<!-- cordova js -->
+	<script src="../../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="brake-system" data-theme="a">
+
+	<!-- Шапка -->
+	<div data-role="header" data-position="fixed"  data-theme="a">
+		<a data-role="button" data-rel="back" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<h1 class="ui-title" role="heading">Описание</h1>
+		<a href="../../../index.html" data-ajax="false" class="ui-nodisc-icon transparentButton" data-role="button" data-icon="home" data-iconpos="notext" data-shadow="false" data-transition="none" data-theme="a">На главную</a>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<h3>Устройство и основные компоненты ESC</h3>
+
+		<p>Система курсовой устойчивости – это совокупность более простых систем: ABS (предотвращает блокировку тормозов), EBD (распределяет тормозные усилия), EDS (блокирует дифференциал с помощью электроники), TCS (предотвращает пробуксовку колес).</p>
+
+		<p>Система динамической стабилизации включает в себя набор датчиков, электронный блок управления (ЭБУ) и исполнительное устройство – гидравлический блок.</p>
+
+		<p>Датчики отслеживают определенные параметры движения автомобиля и передают их в блок управления. С помощью датчиков ESC оценивает действия человека за рулем, а также параметры движения машины.</p>
+
+		<center><img src="../../../images/brake-system/esc/esc-1.jpg"></center>
+
+		<p><strong>Компоненты системы курсовой устойчивости</strong>:</p>
+
+		<ol>
+			<li>гидравлический блок с ЭБУ</li>
+			<li>датчики частоты вращения колес</li>
+			<li>датчик угла поворота рулевого колеса</li>
+			<li>датчик линейных и угловых ускорений</li>
+			<li>электронный блок управления двигателем</li>
+		</ol>
+
+		<p>Для оценки действий человека за рулем система курсовой устойчивости использует датчики давления в тормозной системе и угла поворота рулевого колеса, а также выключатель стоп-сигнала. Параметры движения автомобиля отслеживают датчики давления в тормозной системе, частоты вращения колес, угловой скорости машины, продольного и поперечного ускорения.</p>
+
+		<p>На основании данных, полученных от датчиков, блок управления генерирует управляющие сигналы для исполнительных устройств систем, входящих в состав ESC. Команды от ЭБУ получают:</p>
+
+		<ul>
+			<li>впускные и выпускные клапаны антиблокировочной системы</li>
+			<li>клапаны высокого давления и переключающие клапаны антипробуксовочной системы</li>
+			<li>контрольные лампы ABS, ESP и тормозной системы</li>
+		</ul>
+
+		<p>При работе ЭБУ взаимодействует с блоком управления автоматической коробки передач, а также с блоком управления двигателем. Блок управления не только принимает сигналы от данных систем, но и формирует для их элементов управляющие воздействия.</p>
+
+	</div>
+
+</div>
+
+</body>
+</html>
