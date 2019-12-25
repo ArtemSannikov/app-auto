@@ -15,8 +15,6 @@
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<!-- Include the jQuery Mobile library -->
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-	<!-- Настройка отображения текста и фона  -->
-	<script type="text/javascript" src="js/settings.js"></script>
 	<!-- Open sidebar (left panel) on swipe -->
 	<script type="text/javascript" src="js/swipe-panel.js"></script>
 	<!-- AdMob-->
@@ -35,8 +33,6 @@
 
 		<h1>Категории</h1>
 
-		<a href="#right-panel" data-role="button" data-icon="gear" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton">Настройки</a>
-
 	</div>
 
 	<!-- Выезжающая панель слева -->
@@ -45,46 +41,8 @@
 		<ul data-role="listview">
 			<li data-icon="false"><a href="content/main/about.html" data-ajax="false" data-transition="none">Информация о приложении</a></li>
 			<li data-icon="false"><a href="content/main/contact.html" data-ajax="false" data-transition="none">Контактная информация</a></li>
-			<li data-icon="false"><a href="content/main/donate.html" data-transition="none" data-ajax="false">Поддержать проект</a></li>
 			<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
 		</ul>	
-	</div>
-
-	<!-- Выезжающая панель справа -->
-	<div data-role="panel" id="right-panel" data-display="push" data-position="right" data-position-fixed="true">
-
-		<center><h3>Настройки</h3></center>
-
-		<form action="">
-
-			<select name="backgroundColor" onchange="changeBackground()">
-				<option>Цвет фона</option>
-				<option value="white_background">Белый</option>
-				<option value="gray_background">Серый</option>
-				<option value="black_background">Тёмный</option>
-			</select>
-
-			<select name="fontSizeText" onchange="changeSizeText()">
-				<option>Размер текста</option>
-				<option value="16">16 px</option>
-				<option value="18">18 px</option>
-				<option value="20">20 px</option>
-				<option value="22">22 px</option>
-				<option value="24">24 px</option>
-			</select>
-
-			<select name="textColor" onchange="changeColorText()">
-				<option>Цвет текста</option>
-				<option value="white_colorText">Белый</option>
-				<option value="gray_colorText">Серый</option>
-				<option value="black_colorText">Чёрный</option>
-			</select>
-
-			
-		</form>
-
-			<button onclick="resetSettings()" data-ajax="false">Сбросить</button>
-
 	</div>
 
 		<!-- Всплывающее окно: Оставить отзыв -->
