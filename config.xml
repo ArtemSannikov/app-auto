@@ -34,7 +34,7 @@
 
 			<!-- Версия API  -->
 			<!--<preference name="android-minSdkVersion" value="19">-->
-			<preference name="android-targetSdkVersion" value="26" />
+			<preference name="android-targetSdkVersion" value="28" />
 	
 			<!-- разрешение для переноса приложения на SD карту -->
 			<preference name="android-installLocation" value="auto" />
